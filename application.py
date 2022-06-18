@@ -1,3 +1,4 @@
+# production
 from flask import Flask, render_template, request, url_for, redirect
 import datetime
 from flask_restful import Api, Resource
@@ -56,17 +57,7 @@ def dashboard(address):
   return render_template("dashpage.html", eth = price, fig1 = walletGraph, fig2 = frequencyGraph, address = address, balance = balance)
 
 
-# class GetBal(Resource):
-#   def get(self, address):
-#     return {"balance": getBal(address)}
 
-# api.add_resource(GetBal, "/getBal/<string:address>")
-
-# class CSVDataframe(Resource):
-#   def get(self, address):
-#     return walletBalanceCSV(address)
-  
-# api.add_resource(CSVDataframe, "/csv/<address>")
 
 # moved to rss
 def ethPrice():
@@ -322,5 +313,3 @@ def transactionFrequencyCSV(address):
 
 if __name__ == "__main__":
   application.run(debug = False)
-
-#some new change
