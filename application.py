@@ -49,7 +49,7 @@ def home():
 
 @application.route('/dashboard/<address>')
 def dashboard(address):
-  balance = requests.get(base+bal+address).json()['balance']
+  balance = getBal(address)
   walletGraph = walletBalanceCSV(address)
   frequencyGraph= transactionFrequencyCSV(address)
   price = ethPrice()
