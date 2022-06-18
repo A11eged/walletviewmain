@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {{ title }}
+    </title>
+    <link rel="stylesheet" href="../static/css/dashpage.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+    </style>
+    <meta charset="UTF-8"/>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="/#home" id="navbar-logo"> WalletView </a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="/#home" class="navbar-links" id="homePage">Home</a>
+          </li>
+          <li class="navbar-item">
+            <span class="navbar-dash-status"> View On! </span>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="dashboard">
+      <div class="dashboard-container">
+        <h1 class="panel-heading"> {{address}} </h1>
+        <!-- <h2 class="fig"> {{fig}} </h2> -->
+        
+        <div class="panel-balance">
+          <h1 class="balance-header">
+            Balance 
+          </h1>
+          <h1 class="balance-balance">
+            {{balance}}
+            <div class="ethlogo"> </div>
+          </h1>
+          <p class="eth-price">
+            Eth: $ {{eth}}
+          </p>
+        </div>
+        <div class="panel-line">
+          <div id="line"></div>
+        </div>      
+        <div class="panel-frequency">
+          <div id="frequency"></div>
+        </div>
+
+        <script>
+          var lineGraph = {{fig1 | safe}};
+          Plotly.plot('line', lineGraph, {});
+          var frequencyGraph = {{fig2 | safe}};
+          Plotly.plot('frequency', frequencyGraph, {})
+        </script>
+      </div>
+    </div>
+    <script src="../static/js/dashpage.js"></script>
+  </body>
+</html>
