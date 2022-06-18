@@ -100,7 +100,7 @@ function toDashboard(form){
 //label effects
 $(window).load(function(){
   $(".form-bar input").val("");
-  $(".input-effect").focusout(function(){
+  $(".input-effect input").focusout(function(){
     if($(this).val() != ""){
       $(this).addClass("has-content");
     }else{

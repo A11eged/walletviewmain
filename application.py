@@ -17,7 +17,7 @@ application = Flask(__name__)
 # api = Api(application)
 
 #Endpoints for API
-base = "http://127.0.0.1:5000"
+base = "http://walletview.us-east-1.elasticbeanstalk.com/"
 bal = "/getBal/"
 df = "/df/"
 address = "0x86e7422f127dcb9b85f9426ddf3d7f22dcc4ed1a"
