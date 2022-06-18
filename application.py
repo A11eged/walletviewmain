@@ -320,8 +320,6 @@ def transactionFrequencyCSV(address):
   fig_json = json.dumps(fig, cls=plotly.utils.PlotlyJSONEncoder)
   return(fig_json)
 
-
-serve(application, host='127.0.0.1', port=8080)
 if __name__ == "__main__":
   application.run(debug = False)
 
