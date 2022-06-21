@@ -314,21 +314,6 @@ input[type="text"]{
 
 /* try button */
 
-.try-button{
-  text-decoration: none;
-  margin: 10px;
-  padding: 10px;
-  color: white;
-  text-align: center;
-  cursor: pointer;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  background-color: var(--green);
-  background: linear-gradient(92.88deg, var(--green), var(--darkgreen));
-
-}
 
 a:link{color: white; text-decoration: none;}
 a:visited{color: white; text-decoration: none;}
@@ -375,6 +360,7 @@ a:visited{color: white; text-decoration: none;}
   justify-content: center;
   color: var(--black);
   transition: 0.3s ease-in;
+  align-items: center;
 }
 
 
@@ -396,6 +382,39 @@ a:visited{color: white; text-decoration: none;}
   margin-top: 16px;
 }
 
+.button-card{
+  margin: 10px;
+  height: 150px;
+  width: 700px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--black);
+  transition: 0.3s ease-in;
+  align-items: center;
+}
+
+.try-button{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+  margin: 10px;
+  width: 250px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: var(--green);
+  background: linear-gradient(92.88deg, var(--green), var(--darkgreen));
+
+}
+
 .features-card:hover {
 
   background: var(--lightgreen);
@@ -412,8 +431,6 @@ a:visited{color: white; text-decoration: none;}
   padding: 5rem 0;
 
 }
-
-
 
 .about-container {
   flex-direction: column;

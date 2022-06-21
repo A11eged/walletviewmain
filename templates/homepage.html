@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <link rel="stylesheet" href="../static/css/homepage.css">  
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
     </style>
-    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>    
     <meta charset="UTF-8"/>
     <title> WalletView </title>
-  <!-- https://www.youtube.com/watch?v=n3lcjY4Mm00 
-  incorporate light dark toggle    -->
-    
   </head>
+
   <body>
     <nav class="navbar">
       <div class="navbar-container">
@@ -28,17 +24,12 @@
           <li class="navbar-item">
             <a href="#home" class="navbar-links" id="homePage">Home</a>
           </li>
-
-
           <li class="navbar-item">
             <a href="#features" class="navbar-links"  id="featurePage">Features</a>          
           </li>
           <li class="navbar-item">
             <a href="#about" class="navbar-links"  id="aboutPage">About</a>
           </li>
-          <!-- <li class="navbar-btn">
-            <a href="#signup" class="button" id="signupPage">Start me up!</a>
-          </li> -->
         </ul>
       </div>
     </nav>
@@ -50,14 +41,12 @@
 
         <form class="main-form" action="#" method="post">
           <div class="form-bar input-effect">
-            <input class="searchbar" type="text" name="address" autocomplete="off">
+            <input class="searchbar" type="text" name="address" maxlength="42" minlength="42" autocomplete="off">
             <label> Enter Wallet Address</label>
             <span class="focus-border"><i> </i></span>
           </div>
         </form>
-        <div class="examples-button">
-          <button class="try-button"> <a href="http://walletview.us-east-1.elasticbeanstalk.com/dashboard/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"> View Sample Wallet </a></button>
-        </div>
+
       </div>
     </div>
 
@@ -79,15 +68,16 @@
         </div>
         <div class="features-card">
           <h2>Sample View</h2>
-          <p>Users without wallets and beginners can test the program by viewing a sample wallet to see dashboard</p>
+          <p>Users without wallets and beginners can test the program by viewing a sample wallet to see an example dashboard. <br> Curious? Try it now!</p>
         </div>
-        <div class="features-card">
-          <h2>Still Building</h2>
-          <p>Endless crypto technologies are coming out and allowing this to be built</p>
+        
+        <div class="button-card">
+          <button class="try-button"> <a href="http://walletview.us-east-1.elasticbeanstalk.com/dashboard/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"> View Sample Wallet </a></button>
         </div>
 
       </div>
     </div>
+
 
     
     <!-- About Section -->
