@@ -1,3 +1,4 @@
+# production running!
 from flask import Flask, render_template, request, url_for, redirect
 import datetime
 from flask_restful import Api, Resource
@@ -10,7 +11,7 @@ import matplotlib.pyplot as plt
 import plotly
 import plotly.express as px
 import plotly.graph_objects as go
-from waitress import serve
+
 
 
 application = Flask(__name__)
