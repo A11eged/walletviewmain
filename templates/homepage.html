@@ -1,137 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../static/css/homepage.css">  
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-    </style>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>    
-    <meta charset="UTF-8"/>
-    <title> WalletView </title>
-  </head>
 
-  <body>
-    <nav class="navbar">
-      <div class="navbar-container">
-        <a href="#home" id="navbar-logo"> WalletView </a>
-        <div class="navbar-toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+<head>
+  <link rel="stylesheet" href="../static/css/homepage.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+  </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <meta charset="UTF-8" />
+  <title> WalletView </title>
+</head>
 
-        <ul class="navbar-menu">
-          <li class="navbar-item">
-            <a href="#home" class="navbar-links" id="homePage">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="#features" class="navbar-links"  id="featurePage">Features</a>          
-          </li>
-          <li class="navbar-item">
-            <a href="#about" class="navbar-links"  id="aboutPage">About</a>
-          </li>
-        </ul>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" id="navbar-logo"> WalletView </a>
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </nav>
 
-    <div class="hero" id="home">
-      <div class="hero-container">
-        <h1 class="hero-heading">Track Your <span>Trades</span></h1>
-        <p class="hero-description">With WalletView Dashboard</p>
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="#home" class="navbar-links" id="homePage">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#features" class="navbar-links" id="featurePage">Features</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-links" id="aboutPage">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        <form class="main-form" action="#" method="post">
-          <div class="form-bar input-effect">
-            <input class="searchbar" type="text" name="address" maxlength="42" minlength="42" autocomplete="off">
-            <label> Enter Wallet Address</label>
-            <span class="focus-border"><i> </i></span>
-          </div>
-        </form>
+  <div class="hero" id="home">
+    <div class="hero-container">
+      <div id="svg-container">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="ethlogo-left" data-ratey="-.5" data-direction="left" data-ratex="-.5" viewBox="0 0 31.17 39.01">
+          <g>
+            <g>
+              <g>
+                <image transform="translate(0 8.7) rotate(-34.5) scale(0)" style="isolation:isolate;" />
+                <polygon points="6.33 4.24 7.22 19.1 16.1 18.47 19.89 10.4 6.33 4.24" />
+                <polygon points="8.06 20.31 20.5 24.86 20.71 11.6 16.95 19.71 8.06 20.31" />
+              </g>
+              <polyline points="7.22 19.1 12.42 13.18 19.89 10.4" />
+              <line x1="16.95" y1="19.71" x2="20.5" y2="24.86" />
+            </g>
+            <polyline points="6.33 4.24 12.42 13.18 16.1 18.47" />
+          </g>
+          <path d="M22.22,23.21c-.83,.84,6.88,9.69,8.37,11.21,.15,.15,.23,.23,.25,.22,.09-.07-7.69-12.37-8.62-11.44Z" />
+          <path d="M19.09,27c-.83,.84,6.88,9.69,8.37,11.21,.15,.15,.23,.23,.25,.22,.09-.07-7.69-12.37-8.62-11.44Z" />
+          <path d="M19.09,27c-.83,.84,6.88,9.69,8.37,11.21,.15,.15,.23,.23,.25,.22,.09-.07-7.69-12.37-8.62-11.44Z" />
+          <path d="M22.31,27.32c-.83,.84,6.88,9.69,8.37,11.21,.15,.15,.23,.23,.25,.22,.09-.07-7.69-12.37-8.62-11.44Z" />
+        </svg>
 
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg id="ethlogo-right" data-ratey="-.5" data-direction="right" data-ratex=".5" viewBox="0 0 25.41 36.12">
+          <g>
+            <g>
+              <g>
+                <polygon points="24.86 .79 11.24 6.8 14.93 14.9 23.81 15.64 24.86 .79" />
+                <polygon points="10.4 8.01 10.47 21.26 22.97 16.83 14.06 16.13 10.4 8.01" />
+              </g>
+              <polyline points="11.24 6.8 18.6 9.61 23.81 15.64" />
+              <line x1="14.06" y1="16.13" x2="10.47" y2="21.26" />
+            </g>
+            <polyline points="24.86 .79 18.6 9.61 14.93 14.9" />
+          </g>
+          <path d="M12.61,22.3c-1.07-.48-6.69,9.83-7.59,11.75-.09,.19-.13,.3-.12,.31,.1,.06,8.92-11.52,7.72-12.06Z" />
+          <path d="M7.97,20.68c-1.07-.48-6.69,9.83-7.59,11.75-.09,.19-.13,.3-.12,.31,.1,.06,8.92-11.52,7.72-12.06Z" />
+          <path d="M7.97,20.68c-1.07-.48-6.69,9.83-7.59,11.75-.09,.19-.13,.3-.12,.31,.1,.06,8.92-11.52,7.72-12.06Z" />
+          <path d="M8.79,23.81c-1.07-.48-6.69,9.83-7.59,11.75-.09,.19-.13,.3-.12,.31,.1,.06,8.92-11.52,7.72-12.06Z" />
+        </svg>
+      </div>
+      <h1 class="hero-heading">Track Your <span>Trades</span></h1>
+      <p class="hero-description">With WalletView Dashboard</p>
+
+      <form class="main-form" action="#" method="post">
+        <div class="form-bar input-effect">
+          <input class="searchbar" type="text" name="address" maxlength="42" minlength="42" autocomplete="off">
+          <label> Enter Wallet Address</label>
+          <span class="focus-border"><i> </i></span>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="features" id="features">
+    <h1>Project Features</h1>
+    <div class="features-wrapper">
+      <div class="features-card">
+        <h2>Balance View</h2>
+        <p>Intuitive design makes viewing your balance an easy task</p>
+      </div>
+      <div class="features-card">
+        <h2>Wallet Tracker</h2>
+        <p>Etherscan API is used to collect data and relay findings in a user friendly manner</p>
+      </div>
+      <div class="features-card">
+        <h2>Frequency Counter</h2>
+        <p>Pandas Plot is used to determine number of transactions between a given party</p>
+      </div>
+      <div class="features-card">
+        <h2>Sample View</h2>
+        <p>Users without wallets and beginners can test the program by viewing a sample wallet to see an example
+          dashboard. <br> Curious? Try it now!</p>
+      </div>
+
+      <div class="button-card">
+        <button class="try-button"> <a
+            href="http://walletview.us-east-1.elasticbeanstalk.com/dashboard/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045">
+            View Sample Wallet </a></button>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- About Section -->
+  <div class="about" id="about">
+    <div class="about-container">
+      <h1 class="about-heading">
+        About this Project
+      </h1>
+      <p class="about-p">
+        As someone who uses ethereum on a weekly basis and a long time hodler, I wanted to be able to view the ethereum
+        in my wallet and see how my balance changed over time, as sort of a progress tracker. I found that ethereum data
+        is plentiful and easily accessible, so I wanted to create a one stop destination where anybody can view the data
+        of any wallet, without needing to connect via web3. Besides just viewing my balance, I thought that there should
+        be better ways to visualize the data for my own personal trades and have always wondered which wallets I have
+        sent ethereum to and how frequently.
+      </p>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Section -->
+  <div class="footer-container">
+    <div class="footer-links">
+      <div class="footer-link--wrapper">
+        <div class="footer-link--items">
+          <h2>About Us</h2>
+          <a href="/sign-up">How it works</a>
+          <a href="/">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-link--wrapper">
+        <div class="footer-link--items">
+          <h2>Social Media</h2>
+          <a href="/">Instagram</a>
+          <a href="/" class="github"></a>
+        </div>
       </div>
     </div>
+    <section class="social-media">
+      <div class="social-media--wrap">
+        <div class="footer-logo">
+          <a href="/" id="footer-logo">WalletView</a>
+        </div>
+        <p class="website-rights">©WalletView 2022. All rights reserved</p>
+        <div class="social-icons">
 
-    <!-- Features -->
-    <div class="features" id="features">
-      <h1>Project Features</h1>
-      <div class="features-wrapper">
-        <div class="features-card">
-          <h2>Balance View</h2>
-          <p>Intuitive design makes viewing your balance an easy task</p>
-        </div>
-        <div class="features-card">
-          <h2>Wallet Tracker</h2>
-          <p>Etherscan API is used to collect data and relay findings in a user friendly manner</p>
-        </div>
-        <div class="features-card">
-          <h2>Frequency Counter</h2>
-          <p>Pandas Plot is used to determine number of transactions between a given party</p>
-        </div>
-        <div class="features-card">
-          <h2>Sample View</h2>
-          <p>Users without wallets and beginners can test the program by viewing a sample wallet to see an example dashboard. <br> Curious? Try it now!</p>
-        </div>
-        
-        <div class="button-card">
-          <button class="try-button"> <a href="http://walletview.us-east-1.elasticbeanstalk.com/dashboard/0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"> View Sample Wallet </a></button>
-        </div>
-
-      </div>
-    </div>
-
-
-    
-    <!-- About Section -->
-    <div class="about" id="about">
-      <div class="about-container">
-        <h1 class="about-heading">
-          About this Project
-        </h1>
-        <p class="about-p"> 
-          As someone who uses ethereum on a weekly basis and a long time hodler, I wanted to be able to view the ethereum in my wallet and see how my balance changed over time,  as sort of a progress tracker. I found that ethereum data is plentiful and easily accessible, so I wanted to create a one stop destination where anybody can view the data of any wallet, without needing to  connect via web3. Besides just viewing my balance,  I thought that there should be better ways to visualize the data for my own personal trades and have always wondered which wallets I have sent ethereum to and how frequently.
-        </p>
-      </div>
-    </div>
-    
- 
-
-    <!-- Footer Section -->
-    <div class="footer-container">
-      <div class="footer-links">
-        <div class="footer-link--wrapper">
-          <div class="footer-link--items">
-            <h2>About Us</h2>
-            <a href="/sign-up">How it works</a>
-            <a href="/">Terms of Service</a>
-          </div>
-        </div>
-        <div class="footer-link--wrapper">
-          <div class="footer-link--items">
-            <h2>Social Media</h2>
-            <a href="/">Instagram</a> 
-            <a href="/" class="github"></a>
-          </div>
+          <a href="/" class="social-icon--link">
+            <img class="fa-instagram"></img>
+          </a>
+          <a href="/" class="social-icon--link">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
       </div>
-      <section class="social-media">
-        <div class="social-media--wrap">
-          <div class="footer-logo">
-            <a href="/" id="footer-logo">WalletView</a>
-          </div>
-          <p class="website-rights">©WalletView 2022. All rights reserved</p>
-          <div class="social-icons">
+    </section>
+  </div>
 
-            <a href="/" class="social-icon--link">
-              <img class="fa-instagram"></img>
-            </a>
-            <a href="/" class="social-icon--link">
-              <i class="fab fa-github"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-    </div>
+  <script type="text/javascript" src="../static/js/homepage.js" charset="utf-8"></script>
 
-    <script type="text/javascript" src="../static/js/homepage.js" charset="utf-8"></script>
+</body>
 
-  </body>
 </html>
