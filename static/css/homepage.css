@@ -54,7 +54,7 @@ body {
   padding: 0 50px;
 }
 
-.logo-container {
+/* .logo-container {
   max-width: 70%;
   max-height: 70%;
   top: 5px;
@@ -65,7 +65,7 @@ body {
   position: relative;
   stroke: var(--white);
   fill: var(--black);
-  /* bottom: 13px; */
+
 }
 #eth1 {
   position: relative;
@@ -73,7 +73,7 @@ body {
   height: 20%;
   animation: falling 3s linear forwards infinite;
   transform: translateY(40%);
-  /* bottom: 13px; */
+
 }
 
 @keyframes falling {
@@ -85,9 +85,9 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
+  } */
 
-  /* }
+/* }
   60% {
     transform: translateY(10%);
   }
@@ -96,8 +96,8 @@ body {
   }
   100% {
     transform: translateY(10%);
-  } */
-}
+  } 
+} */
 #eth2 {
   position: relative;
   /* fill: var(--white); */
@@ -106,7 +106,7 @@ body {
   transform: translateY(30%);
 }
 
-/* #navbar-logo {
+#navbar-logo {
   background-color: var(--green);
   background-size: 80%;
   -webkit-background-clip: text;
@@ -118,7 +118,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-size: 1.8rem;
-} */
+}
 
 .navbar-menu {
   display: flex;
