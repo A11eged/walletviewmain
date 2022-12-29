@@ -24,6 +24,7 @@ body {
   --green: #2ba84a;
   --darkgreen: #248232;
   --lightgreen: #7ec9a6;
+  --platinum: #e5e5e5;
   --pfontsize: 20px;
   background-color: var(--white);
   color: green;
@@ -614,5 +615,5 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--green);
+  background: var(--black);
 }
